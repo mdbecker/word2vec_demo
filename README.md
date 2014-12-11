@@ -4,3 +4,6 @@
 3. ``python word2vec_convert.py`` (takes 3+ minutes on my MackBook).
 4. ``python word2vec_api.py`` (takes 30 seconds on my MacBook).
 5. ``open -a Google\ Chrome --args --disable-web-security index.html`` (You might need to close Chrome if it's already open).
+
+## Example
+![https://raw.githubusercontent.com/mdbecker/word2vec_demo/master/example.png](https://raw.githubusercontent.com/mdbecker/word2vec_demo/master/example.png)
