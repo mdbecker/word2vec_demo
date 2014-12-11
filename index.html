@@ -2,21 +2,43 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Gensim</title>
+    <title>The Ghost in the Machine</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
+<h2>The Ghost in the Machine</h2>
 <form name="myForm" id="myForm">
 
-<input type="text" name="first" id="first">
-is to
-<input type="text" name="isto" id="isto">
+<table>
+<tr>
+<td>
+<input type="text" name="first" id="first" placeholder="Japan">
+</td>
+<td>
+&nbsp;is to&nbsp;
+<input type="text" name="isto" id="isto" placeholder="sushi">
 
-as 
-<input type="text" name="second" id="second">
-is to
-<div id="result">?</div>
-<input value="Submit" type="submit">
+</td>
+<td>
+&nbsp;as&nbsp;
+<input type="text" name="second" id="second" placeholder="USA">
+is to&nbsp;
+</td>
+<td>
+<b><div class="bg-success" id="result" style="padding:5px;">?</div><b>
+</td>
+</tr>
+</table>
+<br>
+<input class="btn btn-primary" value="Submit" type="submit"/>
 
 </form>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
@@ -40,12 +62,14 @@ is to
             dataType:'json',
             data: JSON.stringify(analogy),
             success: function(json){
-                alert(json.result);
+                //alert(json.result);
                 $('#result').html( json.result[0][0]);
             }
         });
     }
 
     </script>
+<h3>Artificial neural network</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Neural_network.svg/2000px-Neural_network.svg.png" width="60%"/>
 </body>
 </html>
