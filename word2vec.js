@@ -1,5 +1,6 @@
 var starting = [
     ['man', 'king', 'woman'],
+    ['man', 'emperor', 'woman'],
     ['Japan', 'sushi', 'Germany'],
     ['cat', 'kitten', 'dog'],
     ['big', 'biggest', 'small'],
@@ -9,8 +10,15 @@ var starting = [
     ['Einstein', 'scientist', 'Mozart'],
     ['Einstein', 'scientist', 'Picasso'],
     ['Japan', 'sushi', 'Germany'],
-    ['Japan', 'sushi', 'France'],
-    ['Microsoft', 'Steve_Ballmer', 'Apple']
+    ['China', 'Beijing', 'Russia'],
+    ['Microsoft', 'Steve_Ballmer', 'Apple'],
+    ['Microsoft', 'Steve_Ballmer', 'Google'],
+    ['Luke', 'Star_Wars', 'Picard'],
+    ['Hipsters', 'New_York', 'Rednecks'],
+    ['lawyer', 'liar', 'politician'],
+    ['Arnold_Schwarzenegger', 'Predator', 'Sylvester_Stallone'],
+    ['Metallica', 'rock', 'Snoop_Dog'],
+    ['science', 'fact', 'politics']
 ];
 var random = starting[Math.floor(Math.random()*starting.length)];
 $('#first').val(random[0]);
